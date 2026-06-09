@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare LLM answers against expected responses using the Apify AI Model Comparison actor."""
+"""Run question sets from Excel through multiple LLMs and grade answers with Claude."""
 
 from __future__ import annotations
 
@@ -47,16 +47,16 @@ DEFAULT_MODELS = [
 
 SAMPLE_QUESTIONS = [
     (
-        "What is the default port for MariaDB?",
-        "3306",
+        "What is the capital of France?",
+        "Paris",
     ),
     (
-        "What open source databases have vector capabilities?",
-        "answer should include mariadb, or even better mariadb since version 11.7, or LTS 11.8",
+        "How many continents are there on Earth?",
+        "7",
     ),
     (
-        "Name one SQL command used to read data from a table.",
-        "SELECT",
+        "What planet is known as the Red Planet?",
+        "Mars",
     ),
 ]
 
